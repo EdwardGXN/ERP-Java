@@ -11,3 +11,5 @@ public class DatabaseConnection {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 }
+// Precisa decidir se vai rodar no azure ou local para definir IP do servidor.
+// Alterar dados de login banco

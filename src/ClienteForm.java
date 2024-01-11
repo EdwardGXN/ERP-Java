@@ -48,7 +48,7 @@ public class ClienteForm {
         cancelarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Adicione aqui a lógica para cancelar a operação, se necessário
+                // Incluir codigo para cancelamento, falta decidir de exclui tudo ou somente dados temporarios.
                 JOptionPane.showMessageDialog(null, "Operação cancelada");
             }
         });
@@ -64,7 +64,7 @@ public class ClienteForm {
         salvarButton = new JButton("Salvar");
         cancelarButton = new JButton("Cancelar");
 
-        // Configurar layout para um componente por linha
+        // Ficou configurado a tela por linha. Implantar API de Busca CNPJ
         mainPanel.setLayout(new GridLayout(6, 2));
         mainPanel.add(new JLabel("Nome:"));
         mainPanel.add(nomeField);
@@ -88,7 +88,7 @@ public class ClienteForm {
                 frame.setJMenuBar(createMenuBar());
                 frame.setContentPane(new ClienteForm().mainPanel);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.setSize(600, 400);  // Configurar o tamanho da janela
+                frame.setSize(600, 400);  // Configurar o tamanho da janela // Colocar um autosize.
                 frame.setVisible(true);
             }
         });
@@ -119,10 +119,10 @@ public class ClienteForm {
         imprimirItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Lógica para abrir a caixa de diálogo de impressão do Windows
+                // Puxa a caixa de impressão. Precisa configurar o que imprimir.
                 PrinterJob job = PrinterJob.getPrinterJob();
                 if (job.printDialog()) {
-                    // Lógica para impressão
+                    // Codigo para impressão deve vir abaixo.
                     // ...
                 }
             }
@@ -131,7 +131,6 @@ public class ClienteForm {
         sobreItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Lógica para exibir a tela "Sobre"
                 JOptionPane.showMessageDialog(null,
                         "Autor: Wellington Neves\nVersão: 1.0",
                         "Sobre",

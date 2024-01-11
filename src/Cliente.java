@@ -13,5 +13,5 @@ public class Cliente {
         this.cnpj = cnpj;
     }
 
-    // Getters e Setters aqui (pode gerar automaticamente em muitas IDEs)
+    // Tela 1 de cadastro simples. Dados complementares na tela 2.
 }
