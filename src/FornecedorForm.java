@@ -59,6 +59,7 @@ public class FornecedorForm {
             }
         });
     }
+// Aqui pra baixo é mexer e dá ruim! Deixa queto do jeito que tá. Deus sabe o que faz.
 
     private void initComponents() {
         mainPanel = new JPanel();
